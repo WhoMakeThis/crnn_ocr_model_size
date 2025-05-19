@@ -5,15 +5,9 @@ import torchvision.transforms as transforms
 import torch
 
 CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-<<<<<<< HEAD:crnn/dataset.py
 CHAR2IDX = {char: idx + 1 for idx, char in enumerate(CHARS)}  # CTC blank = 0
 IDX2CHAR = {idx + 1: char for idx, char in enumerate(CHARS)}
 IDX2CHAR[0] = ""  # for CTC blank
-=======
-CHAR2IDX = {char: idx + 1 for idx, char in enumerate(CHARS)}
-IDX2CHAR = {idx + 1: char for idx, char in enumerate(CHARS)}
-IDX2CHAR[0] = ""
->>>>>>> 11e4eff047616fa274a07a63db2472b37d65642a:dataset.py
 
 MAX_LABEL_LEN = 5
 
@@ -32,11 +26,7 @@ class CaptchaDataset(Dataset):
         ])
         self.transform = transforms.Compose([
             transforms.Grayscale(num_output_channels=1),
-<<<<<<< HEAD:crnn/dataset.py
-            transforms.Resize((50, 150)),  # ✅ height=50 고정
-=======
-            transforms.Resize((50, 150)),
->>>>>>> 11e4eff047616fa274a07a63db2472b37d65642a:dataset.py
+            transforms.Resize((50, 150)),  # height=50 고정
             transforms.ToTensor()
         ])
 
@@ -60,9 +50,4 @@ def collate_fn(batch):
     labels = [torch.tensor(label, dtype=torch.long) for label in labels]
     labels = torch.cat(labels)
     label_lengths = torch.tensor(label_lengths, dtype=torch.long)
-<<<<<<< HEAD:crnn/dataset.py
     return images, labels, label_lengths
-
-=======
-    return images, labels, label_lengths
->>>>>>> 11e4eff047616fa274a07a63db2472b37d65642a:dataset.py

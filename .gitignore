@@ -34,13 +34,16 @@ ENV/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Model files and datasets
+# Model files
 *.h5
 *.pkl
 *.pt
 *.pth
-# dataset/
-models/
+
+# Dataset images
+dataset/*.png
+dataset/*.jpg
+dataset/*.jpeg
 
 # Logs
 *.log
