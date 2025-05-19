@@ -1,5 +1,0 @@
-torch
-torchvision
-Pillow>=9.0.0
-tqdm
-numpy>=1.21.0
