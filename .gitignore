@@ -44,7 +44,18 @@ ENV/
 dataset/*.png
 dataset/*.jpg
 dataset/*.jpeg
+dataset/
 
 # Logs
 *.log
 logs/
+
+# 학습 결과
+train_log.csv
+loss_plot.png
+accuracy_plot.png
+crnn_prediction_results_with_accuracy.csv
+sample_predictions/
+
+# 체크포인트
+checkpoint.pth
