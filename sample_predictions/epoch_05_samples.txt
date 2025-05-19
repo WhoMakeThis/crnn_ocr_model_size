@@ -1,0 +1,5 @@
+[Sample 1] 정답: 000BX | 예측: O0BX
+[Sample 2] 정답: 000YI | 예측: 0YI
+[Sample 3] 정답: 0016N | 예측: 016N
+[Sample 4] 정답: 0016Q | 예측: D016Q
+[Sample 5] 정답: 002JF | 예측: 02R
