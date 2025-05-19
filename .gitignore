@@ -39,7 +39,7 @@ ENV/
 *.pkl
 *.pt
 *.pth
-dataset/
+# dataset/
 models/
 
 # Logs
